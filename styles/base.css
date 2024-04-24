@@ -33,8 +33,15 @@ h1{
     font-family: var(--default-heading-fonts);
     color: var(--default-color);
 }
+h2{
+    text-align: center;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: var(--default-heading-fonts);
+    color: var(--default-color);
+}
 
-h2{ display: none;}
 
 a{color: var(--default-text-color);}
 
@@ -126,7 +133,7 @@ main{
     
 }
 
-.card h1{
+.card h2{
     background-color: var(--default-background-color);
     margin-top: 0;
     width: 100%;
@@ -163,7 +170,7 @@ main{
 **/
 .second{ padding: 15px;}
 
-.second h1{ 
+.second h2{ 
     background-color: #fff; 
     color: var(--default-text-color);
 }
