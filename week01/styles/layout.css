@@ -52,7 +52,7 @@ nav li:last-child {
 main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 51px;
+    margin-top: 49px;
 }
 
 section{
