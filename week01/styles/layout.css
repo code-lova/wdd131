@@ -12,10 +12,13 @@ body{
 }
 
 header{
-    border: 1px solid #000;
     background: rgba(60, 42, 42, 0.774);
     height: 160px;
+}
+
+header h1{
     padding-left: 20px;
+    padding-top: 10px;
 }
 
 /* general for all links */
@@ -25,17 +28,20 @@ a{
     cursor: pointer;
 }
 
-nav ul{
+nav{
+    margin-top: 100px;
+}
+
+header nav ul{
     background: #000;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     padding: 20px;
 }
 
@@ -46,6 +52,7 @@ nav li:last-child {
 main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 51px;
 }
 
 section{
