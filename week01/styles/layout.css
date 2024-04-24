@@ -41,8 +41,12 @@ header nav ul{
     padding: 0;
 }
 
+.catch{
+    display: none;
+}
+
 header nav ul li {
-    padding: 20px;
+    padding: 30px;
 }
 
 nav li:last-child {
@@ -52,7 +56,7 @@ nav li:last-child {
 main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 49px;
+    margin-top: 67px;
 }
 
 section{
