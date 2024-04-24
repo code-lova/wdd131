@@ -157,7 +157,7 @@ main{
 }
 
 .first img{
-    max-width: 195px;
+    width: 195px;
     border-radius: 20px;
     height: 210px;
     box-shadow: var(--default-box-shadow);
@@ -207,7 +207,11 @@ main{
     font-style: italic;
 }
 
-.flag img{border-radius: 6px;}
+.flag img{
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+}
 
 
 
