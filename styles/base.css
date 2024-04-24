@@ -1,0 +1,220 @@
+:root{
+    --default-body-font-family: 'Muli', sans-serif;
+    --default-heading-fonts: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --default-background-color: #064606;
+    --default-color: #fff;
+    --default-text-color: #000;
+    --default-navbar-background: rgb(70, 50, 50);
+    --default-font-size: 16px;
+    --default-max-width: 1000px;
+    --default-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--default-body-font-family);
+    font-size: var(--default-font-size);
+}
+
+
+
+/** =========RESUABLE STYLES==========
+    ================================== 
+**/
+h1{
+    text-align: center;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: var(--default-heading-fonts);
+    color: var(--default-color);
+}
+
+a{color: var(--default-text-color);}
+
+a:hover{ color: var(--default-background-color);}
+
+.resources{
+    margin-top: 9rem;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+
+
+
+
+/** =======HEADER AND NAV STYLING===========
+    ========================================= 
+**/
+
+header{
+    max-width: var(--default-max-width);
+    border: 1px solid #000;
+    margin: 20px auto;
+    color: var(--default-color);
+    background: var(--default-background-color);
+}
+
+header span{ font-size: 26px; color: rgb(255, 255, 7);}
+
+
+nav{margin-top: 2px;}
+
+nav ul{
+    background-color: var(--default-background-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 20px; 
+    font-weight: 600;
+    list-style: none;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: var(--default-color);
+    cursor: pointer;
+    transition: background-color 0.3s, width 0.3s, padding 0.3s, color 0.3s;
+}
+
+
+nav a:hover{
+    background-color: var(--default-color);
+    width: auto;
+    padding: 20px;
+    color: var(--default-text-color); /** dont forget to adjust this **/
+    border-radius: 3px;
+}
+
+
+
+
+
+/** STYLING MAIN AND CARD CHILDREN
+    ========================================= 
+**/
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    max-width: var(--default-max-width);
+    margin: 20px auto;
+    color: var(--default-text-color);
+    padding: 0px 20px;
+
+}
+
+.card:first-child {
+    grid-column: span 2;
+}
+
+.card {
+    background-color: var(--default-color);
+    border-radius: 10px;
+    box-shadow: var(--default-box-shadow); 
+    
+}
+
+.card h1{
+    background-color: var(--default-background-color);
+    margin-top: 0;
+    width: 100%;
+}
+
+
+
+/** STYLING FIRST CARD UNDER THE MAIN 
+    ======================================================= 
+**/
+
+.first{ 
+    display: flex;
+    padding: 15px;
+}
+
+.first p{
+    max-width: 400px; 
+    line-height: 1.70rem;
+    margin-top: 0;
+}
+
+.first img{
+    max-width: 195px;
+    border-radius: 20px;
+    height: 210px;
+    box-shadow: var(--default-box-shadow);
+}
+
+
+
+/** STYLING SECOND CARD UNDER THE MAIN 
+    ======================================================= 
+**/
+.second{ padding: 15px;}
+
+.second h1{ 
+    background-color: #fff; 
+    color: var(--default-text-color);
+}
+
+
+.divider{
+    color: var(--default-text-color);
+    width: 150px;
+    border: 1px solid #686666;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+
+.country{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+.details{
+    grid-column: 2/4;
+    line-height: 1.70rem;
+}
+
+.details p{margin-top: 0;}
+
+
+.flag p{
+    margin: 1 auto;
+    margin-left: 30px;
+    font-style: italic;
+}
+
+.flag img{border-radius: 6px;}
+
+
+
+/** STYLING THE FOOTER
+    ======================================================= 
+**/
+footer{
+    margin: 0 auto;
+    max-width: var(--default-max-width);
+    background-color: var(--default-background-color);
+    height: 120px;
+    color: var(--default-color);
+    text-align: center;
+    padding: 13px 0px;
+}
+
+
+
+
